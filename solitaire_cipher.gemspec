@@ -6,7 +6,7 @@ spec = Gem::Specification.new do |s|
   s.email             = 'mathie@rubaidh.com'
   s.has_rdoc          = true
   s.rubyforge_project = "rubaidh"
-  s.homepage          = 'http://rubaidh.com/portfolio/open-source/google-analytics/'
+  s.homepage          = 'http://github.com/mathie/solitaire_cipher/'
   s.summary           = "Solitaire Cipher encoder and decoder."
 
   s.description = "A simple ruby gem for encoding and decoding strings " +
