@@ -182,3 +182,5 @@ them right:
 
     ABVAW LWZSY OORYK DUPVH
 
+The code in this gem is copyright (c) 2006 - 2009 Rubaidh Ltd and released
+under the MIT license. Please see the file MIT-LICENSE for more details.
