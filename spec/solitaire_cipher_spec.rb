@@ -28,6 +28,10 @@ describe SolitaireCipher do
     it "should encode the string 'Code in Ruby, live longer!' as 'GLNCQ MJAFF FVOMB JIYCB'" do
       @solitaire_cipher.encode("Code in Ruby, live longer!").should == "GLNCQ MJAFF FVOMB JIYCB"
     end
+
+    it "should encode the string 'Your cipher is working!!!' as 'CLEPK HHNIY CFPWH FDFEH'" do
+      @solitaire_cipher.encode("Your cipher is working!!!").should == "CLEPK HHNIY CFPWH FDFEH"
+    end
   end
 
   describe "decoding a string" do
