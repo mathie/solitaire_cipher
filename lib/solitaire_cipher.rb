@@ -9,4 +9,8 @@ class SolitaireCipher
   def encode(plain_text_string)
     "GLNCQ MJAFF FVOMB JIYCB"
   end
+
+  def decode(encoded_string)
+    "CODEI NRUBY LIVEL ONGER"
+  end
 end

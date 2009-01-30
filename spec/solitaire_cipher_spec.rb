@@ -24,9 +24,15 @@ describe SolitaireCipher do
     @solitaire_cipher = SolitaireCipher.new(@key_stream)
   end
 
-  describe "encoding" do
+  describe "encoding a string" do
     it "should encode the string 'Code in Ruby, live longer!' as 'GLNCQ MJAFF FVOMB JIYCB'" do
       @solitaire_cipher.encode("Code in Ruby, live longer!").should == "GLNCQ MJAFF FVOMB JIYCB"
+    end
+  end
+
+  describe "decoding a string" do
+    it "should decode the string 'GLNCQ MJAFF FVOMB JIYCB' as 'CODEI NRUBY LIVEL ONGER'" do
+      @solitaire_cipher.decode("GLNCQ MJAFF FVOMB JIYCB").should == "CODEI NRUBY LIVEL ONGER"
     end
   end
 end
