@@ -23,12 +23,16 @@ module StringExtensions
       end
     end
 
+    # Turn a string into an appropriate array of integers which represent the
+    # associated characters (A == 1, B == 2, etc).
     def to_numeric_representation
       split("").map { |c| c.ord - ?A + 1 }
     end
   end
 
   module ClassMethods
+    # Turn an array of integers into the characters they represent.  The
+    # inverse of #to_numeric_representation.
     def from_numeric_representation(array_of_ints)
       array_of_ints.map { |i| (i + ?A - 1).chr }.join
     end

@@ -40,4 +40,14 @@ describe String, "extensions" do
       "STRING".to_numeric_representation.should == [19, 20, 18, 9, 14, 7]
     end
   end
+
+  describe "from_numeric_representation" do
+    it "should turn [1] into 'A'" do
+      String.from_numeric_representation([1]).should == "A"
+    end
+
+    it "should be combinable with #to_numeric_representation to create the identity function" do
+      String.from_numeric_representation("ABCDEFGHIJKLMNOPQRSTUVWXYZ".to_numeric_representation).should == "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+    end
+  end
 end
