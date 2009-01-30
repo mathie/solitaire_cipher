@@ -1,14 +1,14 @@
-Given /^the key stream "DWJXH YRFDG TMSHP UURXJ"$/ do
+Given /^the key stream "(.*)"$/ do |key_stream|
 end
 
-When /^I decode the string "GLNCQ MJAFF FVOMB JIYCB"$/ do
+When /^I decode the string "(.*)"$/ do |encoded_string|
 end
 
-Then /^it should produce the plain text "CODEI NRUBY LIVEL ONGER"$/ do
+Then /^it should produce the plain text "(.*)"$/ do |plain_text_string|
 end
 
-When /^I encode the string "Code in Ruby, live longer!"$/ do
+When /^I encode the string "(.*)"$/ do |plain_text_string|
 end
 
-Then /^it should produce the cipher text "GLNCQ MJAFF FVOMB JIYCB"$/ do
+Then /^it should produce the cipher text "(.*)"$/ do |encoded_string|
 end
