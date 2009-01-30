@@ -1,6 +1,10 @@
 require 'rubygems'
 require 'rake/rdoctask'
 require 'rake/gempackagetask'
+require 'spec/rake/spectask'
+require 'cucumber/rake/task'
+
+task :default => [ :spec, :features ]
 
 Rake::RDocTask.new do |rdoc|
   rdoc.rdoc_dir = 'rdoc'
@@ -16,3 +20,6 @@ Rake::GemPackageTask.new(gem_spec) do |p|
   p.need_tar = false
   p.need_zip = false
 end
+
+Spec::Rake::SpecTask.new
+Cucumber::Rake::Task.new
